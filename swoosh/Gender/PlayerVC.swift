@@ -22,7 +22,7 @@ class PlayerVC: UIViewController {
     }
     
     @IBAction func nextBtn(_ sender: Any) {
-        selectedGender = Ronaldo.isMultipleTouchEnabled = true
+        
     }
     @IBAction func menTeam(_ sender: Any) {
     }
