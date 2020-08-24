@@ -18,7 +18,7 @@ class PlayerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        print("welcome to this page!")
     }
     
     @IBAction func nextBtn(_ sender: Any) {

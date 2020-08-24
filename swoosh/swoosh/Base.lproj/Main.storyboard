@@ -301,11 +301,14 @@
         <!--PlayerVC-->
         <scene sceneID="JDx-Xt-5we">
             <objects>
-                <viewController id="4j2-SL-nDv" customClass="PlayerVC" customModule="swoosh" sceneMemberID="viewController">
+                <viewController id="4j2-SL-nDv" customClass="PlayerVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yTN-UV-0Za">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ronaldo.jpg 16-16-00-4" translatesAutoresizingMaskIntoConstraints="NO" id="FQ2-Sj-hr4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="836"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-OP-eHJ">
                                 <rect key="frame" x="49" y="851" width="316" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -333,9 +336,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ronaldo.jpg 16-16-00-4" translatesAutoresizingMaskIntoConstraints="NO" id="FQ2-Sj-hr4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="836"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-YV-q6n">
                                 <rect key="frame" x="50" y="758" width="314" height="60"/>
                                 <constraints>
