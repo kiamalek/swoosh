@@ -20,6 +20,7 @@ class PlayerVC: UIViewController {
 
         print("welcome to this page!")
         print("again")
+        print("again")
     }
     
     @IBAction func nextBtn(_ sender: Any) {
