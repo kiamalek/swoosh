@@ -19,6 +19,7 @@ class PlayerVC: UIViewController {
         super.viewDidLoad()
 
         print("welcome to this page!")
+        print("again")
     }
     
     @IBAction func nextBtn(_ sender: Any) {

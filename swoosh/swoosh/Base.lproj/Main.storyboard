@@ -336,48 +336,19 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-YV-q6n">
-                                <rect key="frame" x="50" y="758" width="314" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="uvY-aA-vU0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="60" maxY="314"/>
-                                <state key="normal" title="Back home">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPU-Cp-gET" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="20" y="18" width="53" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="HCV-te-2mD"/>
-                                </constraints>
-                                <state key="normal" image="backButton">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="AS8-9m-Klo" kind="show" id="FjN-oJ-a1n"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="P2a-YV-q6n" firstAttribute="leading" secondItem="zjJ-e2-cpI" secondAttribute="leading" constant="50" id="2bu-Xz-0Zo"/>
-                            <constraint firstItem="dPU-Cp-gET" firstAttribute="top" secondItem="zjJ-e2-cpI" secondAttribute="top" constant="18" id="2lK-7L-0VL"/>
                             <constraint firstItem="YGP-OP-eHJ" firstAttribute="top" secondItem="7oK-dW-dLh" secondAttribute="bottom" constant="15" id="3vq-j7-7Yf"/>
                             <constraint firstItem="7oK-dW-dLh" firstAttribute="centerX" secondItem="yTN-UV-0Za" secondAttribute="centerX" id="CU3-qY-7pD"/>
                             <constraint firstItem="FQ2-Sj-hr4" firstAttribute="trailing" secondItem="zjJ-e2-cpI" secondAttribute="trailing" id="HYy-5R-9d4"/>
-                            <constraint firstItem="P2a-YV-q6n" firstAttribute="centerX" secondItem="7oK-dW-dLh" secondAttribute="centerX" id="Jjp-Cd-MSM"/>
-                            <constraint firstItem="dPU-Cp-gET" firstAttribute="leading" secondItem="Ffd-bL-Mcs" secondAttribute="leading" id="MFA-Uj-4eh"/>
                             <constraint firstItem="YGP-OP-eHJ" firstAttribute="leading" secondItem="zjJ-e2-cpI" secondAttribute="leading" constant="49" id="SP3-4r-3aK"/>
                             <constraint firstAttribute="bottom" secondItem="FQ2-Sj-hr4" secondAttribute="bottom" id="YSj-2h-YO2"/>
-                            <constraint firstItem="zjJ-e2-cpI" firstAttribute="bottom" secondItem="P2a-YV-q6n" secondAttribute="bottom" constant="6" id="arw-Rg-lbL"/>
                             <constraint firstItem="zjJ-e2-cpI" firstAttribute="trailing" secondItem="YGP-OP-eHJ" secondAttribute="trailing" constant="49" id="cT3-pZ-XPi"/>
                             <constraint firstItem="FQ2-Sj-hr4" firstAttribute="leading" secondItem="zjJ-e2-cpI" secondAttribute="leading" id="cYZ-uu-2iD"/>
                             <constraint firstItem="FQ2-Sj-hr4" firstAttribute="top" secondItem="zjJ-e2-cpI" secondAttribute="top" id="cZP-Tl-8fn"/>
                             <constraint firstItem="Ffd-bL-Mcs" firstAttribute="top" secondItem="zjJ-e2-cpI" secondAttribute="top" constant="25" id="iYp-hS-U5R"/>
                             <constraint firstItem="zjJ-e2-cpI" firstAttribute="bottom" secondItem="YGP-OP-eHJ" secondAttribute="bottom" constant="6" id="ipX-Vk-Ccv"/>
-                            <constraint firstItem="zjJ-e2-cpI" firstAttribute="trailing" secondItem="dPU-Cp-gET" secondAttribute="trailing" constant="341" id="lUe-3R-J6a"/>
                             <constraint firstItem="YGP-OP-eHJ" firstAttribute="top" secondItem="zjJ-e2-cpI" secondAttribute="top" constant="851" id="tl4-Cv-WDk"/>
                             <constraint firstItem="Ffd-bL-Mcs" firstAttribute="leading" secondItem="zjJ-e2-cpI" secondAttribute="leading" constant="20" id="veo-kZ-Oy4"/>
                         </constraints>
@@ -445,7 +416,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="HRP-aC-Moi"/>
-        <segue reference="FjN-oJ-a1n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Lieke" width="700" height="700"/>
