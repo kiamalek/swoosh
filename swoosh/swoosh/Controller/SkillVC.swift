@@ -30,6 +30,11 @@ class SkillVC: UIViewController {
     }
     
     @IBAction func nextButtonTab(_ sender: Any) {
+        performSegue(withIdentifier: "showPlayerVc", sender: self)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let playerVC = segue.destination as? PlayerVC {
+            playerVC.selectedSkill = selecteSkill
+        }
+    }
 }

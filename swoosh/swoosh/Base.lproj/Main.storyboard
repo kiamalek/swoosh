@@ -12,33 +12,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="XzH-xO-AQw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="iKk-wG-Gfq">
-                                <rect key="frame" x="114.5" y="30" width="185" height="57"/>
+                                <rect key="frame" x="114.5" y="74" width="185" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="4EM-Mv-Mey"/>
                                     <constraint firstAttribute="height" constant="57" id="lQe-YN-Hre"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUX-Qf-vQk">
-                                <rect key="frame" x="51.5" y="187" width="311" height="94"/>
+                                <rect key="frame" x="51.5" y="231" width="311" height="94"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="72"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgB-od-muh">
-                                <rect key="frame" x="50.5" y="281" width="313" height="49.5"/>
+                                <rect key="frame" x="50.5" y="325" width="313" height="49.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l51-VK-6RV">
-                                <rect key="frame" x="15.5" y="360.5" width="383" height="60"/>
+                                <rect key="frame" x="15.5" y="404.5" width="383" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="383" id="eBX-7D-Stt"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm8-sp-bEV" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="10" y="738" width="394" height="60"/>
+                                <rect key="frame" x="10" y="792" width="394" height="60"/>
                                 <color key="backgroundColor" red="0.16438633419689119" green="0.16438633419689119" blue="0.16438633419689119" alpha="0.3316186179577465" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3mR-RV-yKo"/>
@@ -165,7 +165,6 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonTab:" destination="fAg-KG-2Sb" eventType="touchUpInside" id="ERa-hE-O7o"/>
-                                    <segue destination="AS8-9m-Klo" kind="show" id="XnJ-Ag-lg5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -195,6 +194,7 @@
                         <outlet property="ballerButton" destination="031-Pb-NdH" id="dWA-mK-vWz"/>
                         <outlet property="beginnerButton" destination="whO-MS-xYg" id="bdJ-H9-lCW"/>
                         <outlet property="nextButton" destination="efz-63-jSA" id="HPi-qO-C2Y"/>
+                        <segue destination="AS8-9m-Klo" kind="show" identifier="showPlayerVc" id="efT-DP-fhr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zj9-ct-cb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -231,7 +231,6 @@
                                 </state>
                                 <connections>
                                     <action selector="menTeam:" destination="AS8-9m-Klo" eventType="touchUpInside" id="o7h-bd-aSf"/>
-                                    <segue destination="4j2-SL-nDv" kind="show" id="9cg-rI-eUL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2T-8G-3gn" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
@@ -245,7 +244,6 @@
                                 </state>
                                 <connections>
                                     <action selector="wommanTeam:" destination="AS8-9m-Klo" eventType="touchUpInside" id="DJj-mF-YNd"/>
-                                    <segue destination="B2p-RB-5kl" kind="show" id="lB8-3R-YPG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UA-p3-EMZ" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
@@ -254,19 +252,15 @@
                                 <state key="normal" title="Co Red">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="DpK-JQ-SWP" kind="show" id="uQI-ga-oih"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-e2-mBP" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="10" y="730" width="394" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="Back home">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="nextBtn:" destination="AS8-9m-Klo" eventType="touchUpInside" id="kfU-53-fWe"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ncJ-Qv-LA8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -296,17 +290,19 @@
                         <outlet property="kyli" destination="E2T-8G-3gn" id="HJc-Q7-NNU"/>
                         <outlet property="menTeam" destination="hQf-Os-200" id="QIh-gO-bXj"/>
                         <outlet property="womanTeam" destination="E2T-8G-3gn" id="kg5-Hh-wFg"/>
-                        <segue destination="4j2-SL-nDv" kind="show" identifier="mensPlayer" id="HRP-aC-Moi"/>
+                        <segue destination="4j2-SL-nDv" kind="show" identifier="cristianRonaldo" id="BzH-eC-CEj"/>
+                        <segue destination="B2p-RB-5kl" kind="show" identifier="alexMorgan" id="QJH-Tg-nX5"/>
+                        <segue destination="DpK-JQ-SWP" kind="show" identifier="coRed" id="laU-IY-7xy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWj-GP-3ol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1102.8985507246377" y="-66.294642857142861"/>
         </scene>
-        <!--PlayerVC-->
+        <!--Cristian RonaldoVC-->
         <scene sceneID="JDx-Xt-5we">
             <objects>
-                <viewController id="4j2-SL-nDv" customClass="PlayerVC" sceneMemberID="viewController">
+                <viewController id="4j2-SL-nDv" customClass="CristianRonaldoVC" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yTN-UV-0Za">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -330,9 +326,6 @@
                                 <state key="normal" image="backButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="AS8-9m-Klo" kind="show" id="OwT-ZT-ERX"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oK-dW-dLh">
                                 <rect key="frame" x="50" y="779" width="314" height="66"/>
@@ -357,9 +350,6 @@
                                 <state key="normal" title="Cristiano Ronaldo">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="STk-AA-WWY" kind="show" id="hWL-82-rCb"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -402,12 +392,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBq-v2-vbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866.6666666666667" y="-66.294642857142861"/>
+            <point key="canvasLocation" x="1874" y="-644"/>
         </scene>
-        <!--View Controller-->
+        <!--Alex MorganVC-->
         <scene sceneID="dbO-et-7Cz">
             <objects>
-                <viewController id="B2p-RB-5kl" sceneMemberID="viewController">
+                <viewController id="B2p-RB-5kl" customClass="AlexMorganVC" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3SO-1y-ukm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,9 +417,6 @@
                                 <state key="normal" title="Back home">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="tvq-Kx-q0b"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Alex Morgan" translatesAutoresizingMaskIntoConstraints="NO" id="uuO-FE-etQ">
                                 <rect key="frame" x="0.0" y="11" width="414" height="831"/>
@@ -448,9 +435,6 @@
                                 <state key="normal" title="Alex Morgan">
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="aAX-c1-UFG" kind="show" id="oEy-fz-kCp"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mee-4R-n4F">
                                 <rect key="frame" x="20" y="25" width="29" height="24"/>
@@ -462,9 +446,6 @@
                                 <state key="normal" image="backButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="E51-kH-kgf"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cp-iu-m8t" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="784" width="374" height="24"/>
@@ -475,9 +456,6 @@
                                 <state key="normal" image="backButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="AS8-9m-Klo" kind="show" id="436-nD-2f4"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -512,87 +490,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1y9-cj-R6Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2689.8550724637685" y="-66.294642857142861"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xpK-KM-Swb">
-            <objects>
-                <viewController id="STk-AA-WWY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="izm-Ow-szA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXK-ek-TWx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Ronaldo was born on February 5, 1985, in Funchal, Madeira, Portugal, a small island off the western coast of the country. Ronaldo is the youngest of four children born to Maria Dolores dos Santos and José Dinis Aveiro. He was named after Ronald Reagan, one of his father's favorite actors.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nz1-7n-sqP" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="20" y="764" width="374" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="LDF-MA-ooB"/>
-                                    <constraint firstAttribute="height" constant="24" id="wwL-Ua-cLn"/>
-                                </constraints>
-                                <state key="normal" image="backButton">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="4j2-SL-nDv" kind="show" id="i4j-Pj-HOP"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bXK-ek-TWx" secondAttribute="bottom" id="51t-vx-DNi"/>
-                            <constraint firstItem="bXK-ek-TWx" firstAttribute="leading" secondItem="AS4-v9-pgX" secondAttribute="leading" id="63j-Wk-7aA"/>
-                            <constraint firstItem="bXK-ek-TWx" firstAttribute="top" secondItem="AS4-v9-pgX" secondAttribute="top" id="7XM-an-olc"/>
-                            <constraint firstItem="AS4-v9-pgX" firstAttribute="trailing" secondItem="Nz1-7n-sqP" secondAttribute="trailing" constant="20" id="ALg-gi-z34"/>
-                            <constraint firstItem="bXK-ek-TWx" firstAttribute="top" secondItem="AS4-v9-pgX" secondAttribute="top" id="Ba8-uK-BhU"/>
-                            <constraint firstItem="bXK-ek-TWx" firstAttribute="trailing" secondItem="AS4-v9-pgX" secondAttribute="trailing" id="COF-y3-3u7"/>
-                            <constraint firstItem="bXK-ek-TWx" firstAttribute="leading" secondItem="AS4-v9-pgX" secondAttribute="leading" id="ClM-gF-vcK"/>
-                            <constraint firstItem="Nz1-7n-sqP" firstAttribute="leading" secondItem="AS4-v9-pgX" secondAttribute="leading" constant="20" id="eF1-9y-4YP"/>
-                            <constraint firstAttribute="bottom" secondItem="bXK-ek-TWx" secondAttribute="bottom" id="fuV-u8-dBj"/>
-                            <constraint firstItem="bXK-ek-TWx" firstAttribute="trailing" secondItem="AS4-v9-pgX" secondAttribute="trailing" id="hm1-eG-tfi"/>
-                            <constraint firstItem="AS4-v9-pgX" firstAttribute="bottom" secondItem="Nz1-7n-sqP" secondAttribute="bottom" constant="20" id="rUw-FY-6Ag"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="AS4-v9-pgX"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="nRM-ZZ-x69"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xqk-ry-zsa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3437.68115942029" y="-55.580357142857139"/>
+            <point key="canvasLocation" x="1874" y="14"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Pyk-8P-OMJ">
             <objects>
                 <viewController id="aAX-c1-UFG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZV-bo-0ff">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N1Q-8b-nGG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Alex Morgan has starred for USA during a stellar 2018
-She has become a team captain and is closing in on her 100th goal
-Morgan spoke to FIFA.com ahead of Saturday’s France 2019 Draw
-Alex Morgan has long been one of women’s football’s biggest stars. But now, aged 29 and approaching her third FIFA Women’s Women’s World Cup™, she is dazzling brighter than ever.
-
-Morgan’s stats for this year make that case eloquently enough. From 19 international appearances in 2018, she has emerged with 18 goals and three assists. And whenever the stakes soared, so too did the performance levels of USA’s big-game player.
-
-Just think back to October’s CONCACAF Women’s Championship, when World Cup spots and a continental title were on the line. Morgan was unstoppable, scoring seven goals in five games – three of which came in the semi-finals and final - to secure the competition’s Golden Boot and inspire a near-flawless campaign from her team.
-
-</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-50-qVR" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="-20" y="798" width="414" height="24"/>
+                                <rect key="frame" x="-20" y="852" width="414" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="qRr-7u-LHb"/>
                                     <constraint firstAttribute="height" constant="24" id="rIq-uo-Lau"/>
@@ -600,9 +516,6 @@ Just think back to October’s CONCACAF Women’s Championship, when World Cup s
                                 <state key="normal" image="backButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="B2p-RB-5kl" kind="show" id="E6U-ry-cte"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -627,12 +540,12 @@ Just think back to October’s CONCACAF Women’s Championship, when World Cup s
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc1-mG-ljJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4211.594202898551" y="-48.214285714285715"/>
+            <point key="canvasLocation" x="2878" y="13"/>
         </scene>
-        <!--View Controller-->
+        <!--Co RedVC-->
         <scene sceneID="Wg8-wX-ccS">
             <objects>
-                <viewController id="DpK-JQ-SWP" sceneMemberID="viewController">
+                <viewController id="DpK-JQ-SWP" customClass="CoRedVC" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i7f-ju-XB4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -648,9 +561,6 @@ Just think back to October’s CONCACAF Women’s Championship, when World Cup s
                                 <state key="normal" title="Co Red description">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="uZB-em-DFg" kind="show" id="xI4-QG-ztL"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jn-Yt-ddD" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="773" width="414" height="24"/>
@@ -661,9 +571,6 @@ Just think back to October’s CONCACAF Women’s Championship, when World Cup s
                                 <state key="normal" image="backButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="WqH-ey-Ygf"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -682,62 +589,9 @@ Just think back to October’s CONCACAF Women’s Championship, when World Cup s
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hc9-9s-8gy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4989.8550724637689" y="-47.544642857142854"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="d6M-FG-AGU">
-            <objects>
-                <viewController id="uZB-em-DFg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mf4-3y-EQb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-3C-QWU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Co-educational means education for boys and girls together. The practice has been different in different countries, and at different times. Most primary schools have been co-educational for a long time. There is no reason to educate females separately before the age of puberty.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LID-XH-D0Q" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="20" y="764" width="374" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="CQG-S1-Qoe"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="SR0-Xf-isI"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="24" id="iNm-Pv-y2c"/>
-                                </constraints>
-                                <state key="normal" image="backButton">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="DpK-JQ-SWP" kind="show" id="lTu-Bc-KA8"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="xAw-NB-RIM" firstAttribute="trailing" secondItem="LID-XH-D0Q" secondAttribute="trailing" constant="20" id="4xU-03-gO3"/>
-                            <constraint firstItem="xAw-NB-RIM" firstAttribute="bottom" secondItem="LID-XH-D0Q" secondAttribute="bottom" constant="20" id="FoQ-g1-Thk"/>
-                            <constraint firstItem="LID-XH-D0Q" firstAttribute="leading" secondItem="xAw-NB-RIM" secondAttribute="leading" constant="20" id="urv-Xv-UBF"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="xAw-NB-RIM"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="nx1-Qc-29E"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GXo-J3-M1s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5902.898550724638" y="-15.401785714285714"/>
+            <point key="canvasLocation" x="1800" y="735"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="uQI-ga-oih"/>
-        <segue reference="E6U-ry-cte"/>
-        <segue reference="i4j-Pj-HOP"/>
-        <segue reference="436-nD-2f4"/>
-        <segue reference="E51-kH-kgf"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Alex Morgan" width="720" height="315"/>
         <image name="Ronaldo.jpg 16-16-00-4" width="341" height="512"/>

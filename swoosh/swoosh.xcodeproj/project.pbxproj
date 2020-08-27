@@ -10,6 +10,9 @@
 		4A150FBF24F00B24009080DD /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A150FBE24F00B24009080DD /* PlayerVC.swift */; };
 		4A66160024EEA4CA003B9CF2 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6615FF24EEA4CA003B9CF2 /* SkillVC.swift */; };
 		4A66160224EEA8AE003B9CF2 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66160124EEA8AE003B9CF2 /* LeagueVC.swift */; };
+		4A67343C24F7E42C0009AF14 /* CristianRonaldoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67343B24F7E42C0009AF14 /* CristianRonaldoVC.swift */; };
+		4A67343E24F7E46B0009AF14 /* AlexMorganVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67343D24F7E46B0009AF14 /* AlexMorganVC.swift */; };
+		4A67344024F7E4980009AF14 /* CoRedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67343F24F7E4980009AF14 /* CoRedVC.swift */; };
 		4A6EDA4824DD7CD000E8599D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EDA4724DD7CD000E8599D /* AppDelegate.swift */; };
 		4A6EDA4A24DD7CD000E8599D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EDA4924DD7CD000E8599D /* SceneDelegate.swift */; };
 		4A6EDA4C24DD7CD000E8599D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EDA4B24DD7CD000E8599D /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 		4A150FBE24F00B24009080DD /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
 		4A6615FF24EEA4CA003B9CF2 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 		4A66160124EEA8AE003B9CF2 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		4A67343B24F7E42C0009AF14 /* CristianRonaldoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CristianRonaldoVC.swift; sourceTree = "<group>"; };
+		4A67343D24F7E46B0009AF14 /* AlexMorganVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexMorganVC.swift; sourceTree = "<group>"; };
+		4A67343F24F7E4980009AF14 /* CoRedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoRedVC.swift; sourceTree = "<group>"; };
 		4A6EC6F324F1707B002D5D50 /* swoosh.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swoosh.entitlements; sourceTree = "<group>"; };
 		4A6EDA4424DD7CD000E8599D /* swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6EDA4724DD7CD000E8599D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				4A150FBE24F00B24009080DD /* PlayerVC.swift */,
 				4A6615FF24EEA4CA003B9CF2 /* SkillVC.swift */,
 				4A66160124EEA8AE003B9CF2 /* LeagueVC.swift */,
+				4A67343B24F7E42C0009AF14 /* CristianRonaldoVC.swift */,
+				4A67343D24F7E46B0009AF14 /* AlexMorganVC.swift */,
+				4A67343F24F7E4980009AF14 /* CoRedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,11 +187,14 @@
 			files = (
 				4A6EDA4C24DD7CD000E8599D /* ViewController.swift in Sources */,
 				4A6EDA5D24DD882E00E8599D /* BoarderButton.swift in Sources */,
+				4A67343E24F7E46B0009AF14 /* AlexMorganVC.swift in Sources */,
 				4A6EDA4824DD7CD000E8599D /* AppDelegate.swift in Sources */,
+				4A67344024F7E4980009AF14 /* CoRedVC.swift in Sources */,
 				4A66160024EEA4CA003B9CF2 /* SkillVC.swift in Sources */,
 				4A6EDA4A24DD7CD000E8599D /* SceneDelegate.swift in Sources */,
 				4A150FBF24F00B24009080DD /* PlayerVC.swift in Sources */,
 				4A66160224EEA8AE003B9CF2 /* LeagueVC.swift in Sources */,
+				4A67343C24F7E42C0009AF14 /* CristianRonaldoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

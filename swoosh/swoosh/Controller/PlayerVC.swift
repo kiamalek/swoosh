@@ -14,10 +14,10 @@ class PlayerVC: UIViewController {
     @IBOutlet weak var Ronaldo: UIImageView!
     @IBOutlet weak var womanTeam: BoarderButton!
     @IBOutlet weak var menTeam: BoarderButton!
-    var selectedGender : String!
+    var selectedSkill : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(selectedSkill)
         print("welcome to this page!")
         print("again")
         print("again")
