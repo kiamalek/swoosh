@@ -388,6 +388,7 @@
                     <navigationItem key="navigationItem" id="KTY-ec-0Th"/>
                     <connections>
                         <outlet property="Ronaldo" destination="FQ2-Sj-hr4" id="YgR-g8-Zpu"/>
+                        <segue destination="uZP-Vp-VwV" kind="show" id="J78-0g-Bkc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBq-v2-vbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -487,28 +488,31 @@
                         <viewLayoutGuide key="safeArea" id="SvY-Hl-h2l"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Wy-Sc-gWx"/>
+                    <connections>
+                        <segue destination="aAX-c1-UFG" kind="show" id="zQw-wz-LHd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1y9-cj-R6Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1874" y="14"/>
         </scene>
-        <!--View Controller-->
+        <!--AlexM Morgan Info-->
         <scene sceneID="Pyk-8P-OMJ">
             <objects>
-                <viewController id="aAX-c1-UFG" sceneMemberID="viewController">
+                <viewController id="aAX-c1-UFG" customClass="AlexMMorganInfo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZV-bo-0ff">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N1Q-8b-nGG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-50-qVR" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="-20" y="852" width="414" height="24"/>
+                                <rect key="frame" x="-20" y="798" width="414" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="qRr-7u-LHb"/>
                                     <constraint firstAttribute="height" constant="24" id="rIq-uo-Lau"/>
@@ -517,6 +521,27 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="48S-JR-F13">
+                                <rect key="frame" x="0.0" y="61" width="414" height="1115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">U.S. soccer forward who received international fame for scoring the dramatic game-winning goal in the semi-finals of the 2012 Summer Olympics. She also helped the U.S. women's team win the 2015 and 2019 World Cups.
+
+Before Fame
+She led the Cal Golden Bears in scoring during each of her four years with the team, despite missing several games to play with the U.S. U-20 team.
+
+Trivia
+She was the first overall pick in the 2011 WPS Draft by the Western New York Flash.
+
+Family Life
+She was raised with two sisters and began dating Servando Carrasco when she was a freshman at the University of California, Berkley. She and Servando got married on New Year's Eve 2014. On May 7, 2020, their daughter Charlie Elena was born.
+
+Associated With
+She shared the 2012 Olympic gold medal with teammate Abby Wambach.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -540,7 +565,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc1-mG-ljJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="13"/>
+            <point key="canvasLocation" x="2876.811594202899" y="12.723214285714285"/>
         </scene>
         <!--Co RedVC-->
         <scene sceneID="Wg8-wX-ccS">
@@ -586,10 +611,156 @@
                         <viewLayoutGuide key="safeArea" id="1p9-Th-oju"/>
                     </view>
                     <navigationItem key="navigationItem" id="lGR-hS-aTy"/>
+                    <connections>
+                        <segue destination="qK5-qQ-O2G" kind="show" id="IS6-AG-q2M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hc9-9s-8gy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1800" y="735"/>
+        </scene>
+        <!--Ronaldo Info-->
+        <scene sceneID="kYM-6a-gVh">
+            <objects>
+                <viewController id="uZP-Vp-VwV" customClass="ronaldoInfo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rtJ-Dg-2Gz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kah-ll-uwv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmd-Dz-ChE" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                                <rect key="frame" x="-20" y="798" width="414" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="7uZ-O7-kTi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="Rzr-32-xln"/>
+                                </constraints>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ucQ-Jd-jij">
+                                <rect key="frame" x="0.0" y="-55" width="414" height="897"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">ristiano Ronaldo dos Santos Aveiro GOIH ComM (European Portuguese: [kɾiʃˈtjɐnu ʁɔˈnaɫdu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time,[note 3] Ronaldo has won five Ballons d'Or[note 4] and four European Golden Shoes, both of which are records for a European player. He has won 30 major trophies in his career, including seven league titles, five UEFA Champions Leagues, one UEFA European Championship, and one UEFA Nations League title. Ronaldo holds the records for the most goals (130) and assists (40) in the history of the UEFA Champions League.[11] He is one of the few recorded players to have made over 1,000 professional career appearances and has scored over 700 senior career goals for club and country.[12]
+
+Born and raised in Madeira, Ronaldo began his senior club career playing for Sporting CP, before signing with Manchester United in 2003, aged 18. After winning the FA Cup in his first season, he helped United win three successive Premier League titles, the UEFA Champions League, and the FIFA Club World Cup; at age 23, he won his first Ballon d'Or. In 2009, Ronaldo was the subject of the then-most expensive association football transfer when signed for Real Madrid in a transfer worth €94 million (£80 million). There, Ronaldo won 15 trophies, including two La Liga titles, two Copas del Rey, and four UEFA Champions League titles, and became the club's all-time top goalscorer. After joining Madrid, Ronaldo finished runner-up for the Ballon d'Or three times, behind Lionel Messi—his perceived career rival—before winning back-to-back Ballons d'Or from 2013–2014 and again from 2016–2017. After winning a third consecutive Champions League title in 2018, Ronaldo became the first player to win the trophy five times. In 2018, he signed for Juventus in a transfer worth an initial €100 million (£88 million), the highest ever paid by an Italian club and the highest ever paid for a player over 30 years old. He won the Serie A in his first two seasons with the club.
+
+A Portuguese international, Ronaldo was named the best Portuguese player of all time by the Portuguese Football Federation in 2015. He made his senior debut in 2003 at age 18, and has since earned over 160 caps, including appearing and scoring in ten major tournaments, becoming Portugal's most capped player and his country's all-time top goalscorer. He scored his first international goal at Euro 2004 and helped Portugal reach the final of the competition. He assumed full captaincy in July 2008, leading Portugal to their first-ever triumph in a major tournament by winning Euro 2016, and received the Silver Boot as the second-highest goalscorer of the tournament. He became the highest European international goalscorer of all-time in 2018.[13]
+
+One of the most marketable and famous athletes in the world, Ronaldo was ranked the world's highest-paid athlete by Forbes in 2016 and 2017 and the world's most famous athlete by ESPN from 2016 to 2019. Time included him on their list of the 100 most influential people in the world in 2014. Ronaldo is the first footballer, as well as only the third sportsman, to earn $1 billion in their career.[14]
+</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKG-l6-oa2" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="798" width="414" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="a1Z-Dn-5nc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="wYM-6i-4eo"/>
+                                </constraints>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Kah-ll-uwv" firstAttribute="trailing" secondItem="UFv-Na-GzZ" secondAttribute="trailing" id="04A-HJ-xok"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="leading" secondItem="ucQ-Jd-jij" secondAttribute="leading" id="7R2-5N-toF"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="leading" secondItem="Kah-ll-uwv" secondAttribute="leading" id="89s-Z9-pZ8"/>
+                            <constraint firstItem="UFv-Na-GzZ" firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="ARZ-ve-JwP"/>
+                            <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="Aym-ud-hoI"/>
+                            <constraint firstItem="Kah-ll-uwv" firstAttribute="top" secondItem="rtJ-Dg-2Gz" secondAttribute="top" id="Fwg-dg-f12"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="trailing" secondItem="Kah-ll-uwv" secondAttribute="trailing" id="LNH-XP-i4A"/>
+                            <constraint firstItem="Kah-ll-uwv" firstAttribute="leading" secondItem="UFv-Na-GzZ" secondAttribute="leading" id="PK7-WV-LfJ"/>
+                            <constraint firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="Plw-st-0j2"/>
+                            <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="RKX-KO-x5h"/>
+                            <constraint firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="S7H-ev-oHf"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="top" secondItem="lmd-Dz-ChE" secondAttribute="top" id="VIO-5U-zfD"/>
+                            <constraint firstAttribute="bottom" secondItem="lmd-Dz-ChE" secondAttribute="bottom" constant="20" id="Xai-eo-pWb"/>
+                            <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="Xwv-V7-PsR"/>
+                            <constraint firstItem="ucQ-Jd-jij" firstAttribute="top" secondItem="rtJ-Dg-2Gz" secondAttribute="topMargin" constant="-55" id="ekX-IZ-SCw"/>
+                            <constraint firstItem="ucQ-Jd-jij" firstAttribute="bottom" secondItem="Kah-ll-uwv" secondAttribute="bottom" id="fmV-vG-8Sy"/>
+                            <constraint firstAttribute="bottom" secondItem="Kah-ll-uwv" secondAttribute="bottom" id="oRO-Sr-nX3"/>
+                            <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="rh3-Jq-N7a"/>
+                            <constraint firstItem="UFv-Na-GzZ" firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="sCV-dq-3Ej"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="trailing" secondItem="ucQ-Jd-jij" secondAttribute="trailing" id="sHJ-Fn-q4B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UFv-Na-GzZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vzu-hj-IiV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fY-j2-Pwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2877" y="-644"/>
+        </scene>
+        <!--Co Red Info-->
+        <scene sceneID="Fak-Bn-0lE">
+            <objects>
+                <viewController id="qK5-qQ-O2G" customClass="CoRedInfo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bvd-PZ-I4S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1tC-Vf-X3c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-Ej-8MG" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                                <rect key="frame" x="-20" y="798" width="414" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="4V4-s0-JuZ"/>
+                                    <constraint firstAttribute="height" constant="24" id="W7I-RP-EwE"/>
+                                </constraints>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IAY-rR-puc">
+                                <rect key="frame" x="0.0" y="77" width="414" height="819"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">COED is a news, entertainment, sports, and lifestyle website. Originally a print magazine, COED shifted towards online publication exclusively in 2007.[4][5] The content is primarily targeted at college-aged men and written by college-aged writers.[6] The website contains news and interviews as well as photography of female celebrities.[7] Posts from COED are featured in publications such as The Huffington Post and Maxim.[8][9][10]
+
+In addition to college-related material, the website features entertainment news, interviews, and technology news.[7] The website has an annual competition referred to as Miss COED. The competition features women attending colleges across America and began as a way to win a spread in the print version of the magazine.[11] Previous winners have included Playboy Playmates Amanda Paige, Jessica Ashley, Tiffany Toth, and MMA fighter Ashley Salazar.[</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="9YP-Oz-sIq"/>
+                            <constraint firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="D5r-jA-ilo"/>
+                            <constraint firstAttribute="bottom" secondItem="1tC-Vf-X3c" secondAttribute="bottom" id="ELu-I9-oNn"/>
+                            <constraint firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="F5k-vv-93G"/>
+                            <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="Gbf-mW-W8O"/>
+                            <constraint firstItem="PSC-8w-0Cg" firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="KVT-un-bMr"/>
+                            <constraint firstItem="1tC-Vf-X3c" firstAttribute="leading" secondItem="PSC-8w-0Cg" secondAttribute="leading" id="LSw-XK-nsk"/>
+                            <constraint firstItem="1tC-Vf-X3c" firstAttribute="trailing" secondItem="PSC-8w-0Cg" secondAttribute="trailing" id="LtL-sB-NiP"/>
+                            <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="NrM-XP-43Z"/>
+                            <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="QS4-OC-4QH"/>
+                            <constraint firstAttribute="bottom" secondItem="89N-Ej-8MG" secondAttribute="bottom" constant="20" id="dZz-GG-nGO"/>
+                            <constraint firstItem="1tC-Vf-X3c" firstAttribute="top" secondItem="Bvd-PZ-I4S" secondAttribute="top" id="eHX-bG-LoG"/>
+                            <constraint firstItem="PSC-8w-0Cg" firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="iE7-qD-Lpn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PSC-8w-0Cg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g0n-Bn-eMW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJz-dq-ius" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.811594202899" y="734.59821428571422"/>
         </scene>
     </scenes>
     <resources>

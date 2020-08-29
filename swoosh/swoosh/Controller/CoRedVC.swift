@@ -8,23 +8,24 @@
 
 import UIKit
 
-class CoRedVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+   lass CoRedVC: UIViewController {
 
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            let b:Int = 1985
+            if (b - 621 <= 38) {
+                print("Ronaldo is younger than me")
+            }
+            else if (b - 621 == 38){
+                print("He's not younger than me")
+            } else if (b - 621 > 38){
+                print("It's older")
+            }   else {
+                print("it's impossible")
+                }
+                }
+            }
     */
 
 }
