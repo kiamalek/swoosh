@@ -20,6 +20,7 @@
 		4A6EDA5124DD7CD300E8599D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6EDA5024DD7CD300E8599D /* Assets.xcassets */; };
 		4A6EDA5424DD7CD300E8599D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6EDA5224DD7CD300E8599D /* LaunchScreen.storyboard */; };
 		4A6EDA5D24DD882E00E8599D /* BoarderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EDA5C24DD882E00E8599D /* BoarderButton.swift */; };
+		4A9C198B24FBC70800E1CB59 /* boarderButton2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C198A24FBC70800E1CB59 /* boarderButton2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4A6EDA5324DD7CD300E8599D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6EDA5524DD7CD300E8599D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A6EDA5C24DD882E00E8599D /* BoarderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoarderButton.swift; sourceTree = "<group>"; };
+		4A9C198A24FBC70800E1CB59 /* boarderButton2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boarderButton2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4A6EDA5C24DD882E00E8599D /* BoarderButton.swift */,
+				4A9C198A24FBC70800E1CB59 /* boarderButton2ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				4A6EDA5D24DD882E00E8599D /* BoarderButton.swift in Sources */,
 				4A67343E24F7E46B0009AF14 /* AlexMorganVC.swift in Sources */,
 				4A6EDA4824DD7CD000E8599D /* AppDelegate.swift in Sources */,
+				4A9C198B24FBC70800E1CB59 /* boarderButton2ViewController.swift in Sources */,
 				4A67344024F7E4980009AF14 /* CoRedVC.swift in Sources */,
 				4A66160024EEA4CA003B9CF2 /* SkillVC.swift in Sources */,
 				4A6EDA4A24DD7CD000E8599D /* SceneDelegate.swift in Sources */,
