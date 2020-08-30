@@ -9,7 +9,7 @@
 import UIKit
 
 
-   lass CoRedVC: UIViewController {
+   class CoRedVC: UIViewController {
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -26,6 +26,6 @@ import UIKit
                 }
                 }
             }
-    */
+    
 
-}
+

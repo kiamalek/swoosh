@@ -10,7 +10,7 @@ import UIKit
 
 
 
-lass CristianRonaldoVC: UIViewController {
+class AlexMorganVC: UIViewController {
 
 override func viewDidLoad() {
     super.viewDidLoad()

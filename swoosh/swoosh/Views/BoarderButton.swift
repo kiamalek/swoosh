@@ -8,11 +8,21 @@
 
 import UIKit
 
+@IBDesignable
 class BoarderButton: UIButton {
+    @IBInspectable public var boarderWidth: CGFloat = 0.0 {
+        didSet {
+            self.layer.borderWidth = boarderWidth
+        }
+    }
+    @IBInspectable public var bordercolor: UIColor = .black {
+        didSet {
+            self.layer.borderColor = bordercolor.cgColor
+        }
+    }
     override  func awakeFromNib() {
         super.awakeFromNib()
-        layer.borderWidth = 3.0
-        layer.borderColor = UIColor.darkGray.cgColor
+      
     }
 }
 
