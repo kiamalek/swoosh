@@ -12,33 +12,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="XzH-xO-AQw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="iKk-wG-Gfq">
-                                <rect key="frame" x="114.5" y="74" width="185" height="57"/>
+                                <rect key="frame" x="114.5" y="30" width="185" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="4EM-Mv-Mey"/>
                                     <constraint firstAttribute="height" constant="57" id="lQe-YN-Hre"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUX-Qf-vQk">
-                                <rect key="frame" x="51.5" y="231" width="311" height="94"/>
+                                <rect key="frame" x="51.5" y="187" width="311" height="94"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="72"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgB-od-muh">
-                                <rect key="frame" x="50.5" y="325" width="313" height="49.5"/>
+                                <rect key="frame" x="50.5" y="281" width="313" height="49.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="38"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l51-VK-6RV">
-                                <rect key="frame" x="15.5" y="404.5" width="383" height="60"/>
+                                <rect key="frame" x="15.5" y="360.5" width="383" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="383" id="eBX-7D-Stt"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm8-sp-bEV" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
-                                <rect key="frame" x="10" y="792" width="394" height="60"/>
+                                <rect key="frame" x="10" y="738" width="394" height="60"/>
                                 <color key="backgroundColor" red="0.16438633419689119" green="0.16438633419689119" blue="0.16438633419689119" alpha="0.3316186179577465" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3mR-RV-yKo"/>
@@ -141,6 +141,14 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                                <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="beginnerButtonTapped:" destination="fAg-KG-2Sb" eventType="touchUpInside" id="rJK-Dl-kBc"/>
                                         </connections>
@@ -228,7 +236,7 @@
         <!--PlayerVC-->
         <scene sceneID="N5A-Tm-XjL">
             <objects>
-                <viewController id="AS8-9m-Klo" customClass="PlayerVC" customModule="swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AS8-9m-Klo" customClass="PlayerVC" customModule="swoosh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s5M-F9-M2k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,6 +261,14 @@
                                 <state key="normal" title="Men">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="menTeam:" destination="AS8-9m-Klo" eventType="touchUpInside" id="o7h-bd-aSf"/>
                                 </connections>
@@ -266,6 +282,14 @@
                                 <state key="normal" title="Women">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="wommanTeam:" destination="AS8-9m-Klo" eventType="touchUpInside" id="DJj-mF-YNd"/>
                                 </connections>
@@ -276,13 +300,29 @@
                                 <state key="normal" title="Co Red">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-e2-mBP" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-e2-mBP" customClass="BoarderButton" customModule="swoosh">
                                 <rect key="frame" x="10" y="730" width="394" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextBtn:" destination="AS8-9m-Klo" eventType="touchUpInside" id="kfU-53-fWe"/>
                                 </connections>
@@ -341,7 +381,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffd-bL-Mcs">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffd-bL-Mcs" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="50" y="20" width="81" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Ayg-Wh-0ui"/>
@@ -361,6 +401,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjG-ML-UvF">
                                 <rect key="frame" x="20" y="543" width="374" height="66"/>
@@ -375,6 +423,14 @@
                                 <state key="normal" title="Cristiano Ronaldo">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -461,8 +517,16 @@
                                 <state key="normal" title="Alex Morgan">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mee-4R-n4F">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mee-4R-n4F" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="25" width="29" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="gDd-vu-lFv"/>
@@ -546,10 +610,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="48S-JR-F13">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="48S-JR-F13">
                                 <rect key="frame" x="0.0" y="61" width="414" height="1115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1115" id="q2s-a1-2Vs"/>
+                                </constraints>
                                 <string key="text">U.S. soccer forward who received international fame for scoring the dramatic game-winning goal in the semi-finals of the 2012 Summer Olympics. She also helped the U.S. women's team win the 2015 and 2019 World Cups.
 
 Before Fame
@@ -567,20 +633,39 @@ She shared the 2012 Olympic gold medal with teammate Abby Wambach.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eq-3Z-9kL" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="789" width="414" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="6Uz-xF-6iv"/>
+                                    <constraint firstAttribute="height" constant="24" id="CVf-Sn-0MK"/>
+                                </constraints>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="69b-3p-TUR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="48S-JR-F13" firstAttribute="top" secondItem="60V-qN-4j4" secondAttribute="top" constant="61" id="1bj-R1-zeV"/>
                             <constraint firstItem="60V-qN-4j4" firstAttribute="trailing" secondItem="wXe-50-qVR" secondAttribute="trailing" constant="20" id="4c6-Ez-Y6j"/>
                             <constraint firstAttribute="bottom" secondItem="wXe-50-qVR" secondAttribute="bottom" constant="20" id="7db-h7-fIo"/>
                             <constraint firstAttribute="trailing" secondItem="wXe-50-qVR" secondAttribute="trailing" constant="20" id="9g7-cP-frI"/>
                             <constraint firstItem="N1Q-8b-nGG" firstAttribute="trailing" secondItem="60V-qN-4j4" secondAttribute="trailing" id="A5I-qn-Rq7"/>
+                            <constraint firstItem="5Eq-3Z-9kL" firstAttribute="trailing" secondItem="N1Q-8b-nGG" secondAttribute="trailing" id="ANz-gu-d1a"/>
                             <constraint firstAttribute="trailing" secondItem="wXe-50-qVR" secondAttribute="trailing" constant="20" id="EBV-2m-Cr6"/>
                             <constraint firstAttribute="bottom" secondItem="N1Q-8b-nGG" secondAttribute="bottom" id="JsE-op-Ir3"/>
                             <constraint firstItem="wXe-50-qVR" firstAttribute="leading" secondItem="TZV-bo-0ff" secondAttribute="leading" constant="-20" id="QAE-9z-f4q"/>
+                            <constraint firstItem="5Eq-3Z-9kL" firstAttribute="leading" secondItem="N1Q-8b-nGG" secondAttribute="leading" id="UGc-yu-h71"/>
                             <constraint firstItem="wXe-50-qVR" firstAttribute="leading" secondItem="TZV-bo-0ff" secondAttribute="leading" constant="-20" id="anx-BU-MJY"/>
                             <constraint firstItem="N1Q-8b-nGG" firstAttribute="leading" secondItem="60V-qN-4j4" secondAttribute="leading" id="eLj-Nk-xHF"/>
                             <constraint firstItem="wXe-50-qVR" firstAttribute="leading" secondItem="TZV-bo-0ff" secondAttribute="leading" constant="-20" id="gXB-j4-KrF"/>
+                            <constraint firstItem="5Eq-3Z-9kL" firstAttribute="bottom" secondItem="60V-qN-4j4" secondAttribute="bottom" constant="5" id="jY5-el-ejR"/>
                             <constraint firstItem="60V-qN-4j4" firstAttribute="trailing" secondItem="wXe-50-qVR" secondAttribute="trailing" constant="20" id="lLi-4t-WAe"/>
+                            <constraint firstItem="5Eq-3Z-9kL" firstAttribute="leading" secondItem="48S-JR-F13" secondAttribute="leading" id="t3r-st-Gia"/>
+                            <constraint firstItem="5Eq-3Z-9kL" firstAttribute="trailing" secondItem="48S-JR-F13" secondAttribute="trailing" id="yTH-TC-4VN"/>
                             <constraint firstItem="N1Q-8b-nGG" firstAttribute="top" secondItem="TZV-bo-0ff" secondAttribute="top" id="ycT-hT-MhB"/>
                             <constraint firstItem="wXe-50-qVR" firstAttribute="leading" secondItem="TZV-bo-0ff" secondAttribute="leading" constant="-20" id="ydx-BR-Fpc"/>
                         </constraints>
@@ -611,6 +696,14 @@ She shared the 2012 Olympic gold medal with teammate Abby Wambach.</string>
                                 <state key="normal" title="Co Red description">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jn-Yt-ddD" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="773" width="414" height="24"/>
@@ -669,8 +762,8 @@ She shared the 2012 Olympic gold medal with teammate Abby Wambach.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ucQ-Jd-jij">
-                                <rect key="frame" x="0.0" y="-55" width="414" height="897"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ucQ-Jd-jij">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">ristiano Ronaldo dos Santos Aveiro GOIH ComM (European Portuguese: [kɾiʃˈtjɐnu ʁɔˈnaɫdu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time,[note 3] Ronaldo has won five Ballons d'Or[note 4] and four European Golden Shoes, both of which are records for a European player. He has won 30 major trophies in his career, including seven league titles, five UEFA Champions Leagues, one UEFA European Championship, and one UEFA Nations League title. Ronaldo holds the records for the most goals (130) and assists (40) in the history of the UEFA Champions League.[11] He is one of the few recorded players to have made over 1,000 professional career appearances and has scored over 700 senior career goals for club and country.[12]
 
@@ -681,7 +774,7 @@ A Portuguese international, Ronaldo was named the best Portuguese player of all 
 One of the most marketable and famous athletes in the world, Ronaldo was ranked the world's highest-paid athlete by Forbes in 2016 and 2017 and the world's most famous athlete by ESPN from 2016 to 2019. Time included him on their list of the 100 most influential people in the world in 2014. Ronaldo is the first footballer, as well as only the third sportsman, to earn $1 billion in their career.[14]
 </string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKG-l6-oa2" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
@@ -693,17 +786,31 @@ One of the most marketable and famous athletes in the world, Ronaldo was ranked 
                                 <state key="normal" image="backButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="h0f-id-ywd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Kah-ll-uwv" firstAttribute="trailing" secondItem="UFv-Na-GzZ" secondAttribute="trailing" id="04A-HJ-xok"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="top" secondItem="UFv-Na-GzZ" secondAttribute="top" constant="798" id="1zB-wf-Two"/>
                             <constraint firstItem="lKG-l6-oa2" firstAttribute="leading" secondItem="ucQ-Jd-jij" secondAttribute="leading" id="7R2-5N-toF"/>
                             <constraint firstItem="lKG-l6-oa2" firstAttribute="leading" secondItem="Kah-ll-uwv" secondAttribute="leading" id="89s-Z9-pZ8"/>
                             <constraint firstItem="UFv-Na-GzZ" firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="ARZ-ve-JwP"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="trailing" secondItem="UFv-Na-GzZ" secondAttribute="trailing" id="Aqu-fv-t29"/>
                             <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="Aym-ud-hoI"/>
                             <constraint firstItem="Kah-ll-uwv" firstAttribute="top" secondItem="rtJ-Dg-2Gz" secondAttribute="top" id="Fwg-dg-f12"/>
                             <constraint firstItem="lKG-l6-oa2" firstAttribute="trailing" secondItem="Kah-ll-uwv" secondAttribute="trailing" id="LNH-XP-i4A"/>
+                            <constraint firstItem="lKG-l6-oa2" firstAttribute="leading" secondItem="UFv-Na-GzZ" secondAttribute="leading" id="OQR-in-zjs"/>
                             <constraint firstItem="Kah-ll-uwv" firstAttribute="leading" secondItem="UFv-Na-GzZ" secondAttribute="leading" id="PK7-WV-LfJ"/>
                             <constraint firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="Plw-st-0j2"/>
                             <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="RKX-KO-x5h"/>
@@ -713,6 +820,7 @@ One of the most marketable and famous athletes in the world, Ronaldo was ranked 
                             <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="Xwv-V7-PsR"/>
                             <constraint firstItem="ucQ-Jd-jij" firstAttribute="top" secondItem="rtJ-Dg-2Gz" secondAttribute="topMargin" constant="-55" id="ekX-IZ-SCw"/>
                             <constraint firstItem="ucQ-Jd-jij" firstAttribute="bottom" secondItem="Kah-ll-uwv" secondAttribute="bottom" id="fmV-vG-8Sy"/>
+                            <constraint firstAttribute="bottom" secondItem="lKG-l6-oa2" secondAttribute="bottom" constant="5" id="n08-YL-D9z"/>
                             <constraint firstAttribute="bottom" secondItem="Kah-ll-uwv" secondAttribute="bottom" id="oRO-Sr-nX3"/>
                             <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="rh3-Jq-N7a"/>
                             <constraint firstItem="UFv-Na-GzZ" firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="sCV-dq-3Ej"/>
@@ -724,24 +832,24 @@ One of the most marketable and famous athletes in the world, Ronaldo was ranked 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fY-j2-Pwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877" y="-644"/>
+            <point key="canvasLocation" x="2876.811594202899" y="-644.19642857142856"/>
         </scene>
         <!--Co Red Info-->
         <scene sceneID="Fak-Bn-0lE">
             <objects>
                 <viewController id="qK5-qQ-O2G" customClass="CoRedInfo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bvd-PZ-I4S">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Bvd-PZ-I4S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1tC-Vf-X3c">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1tC-Vf-X3c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-Ej-8MG" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-Ej-8MG" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="-20" y="798" width="414" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="4V4-s0-JuZ"/>
@@ -762,9 +870,31 @@ In addition to college-related material, the website features entertainment news
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-l5-yWn" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="798" width="414" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Z2G-Qr-cuZ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="sSm-qV-Qvn"/>
+                                </constraints>
+                                <state key="normal" image="backButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="boarderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                        <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0aN-OV-nYw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gMd-l5-yWn" secondAttribute="bottom" constant="5" id="00z-cK-leU"/>
                             <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="9YP-Oz-sIq"/>
                             <constraint firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="D5r-jA-ilo"/>
                             <constraint firstAttribute="bottom" secondItem="1tC-Vf-X3c" secondAttribute="bottom" id="ELu-I9-oNn"/>
@@ -773,11 +903,14 @@ In addition to college-related material, the website features entertainment news
                             <constraint firstItem="PSC-8w-0Cg" firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="KVT-un-bMr"/>
                             <constraint firstItem="1tC-Vf-X3c" firstAttribute="leading" secondItem="PSC-8w-0Cg" secondAttribute="leading" id="LSw-XK-nsk"/>
                             <constraint firstItem="1tC-Vf-X3c" firstAttribute="trailing" secondItem="PSC-8w-0Cg" secondAttribute="trailing" id="LtL-sB-NiP"/>
+                            <constraint firstAttribute="trailing" secondItem="gMd-l5-yWn" secondAttribute="trailing" id="MjE-jd-3be"/>
                             <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="NrM-XP-43Z"/>
+                            <constraint firstItem="gMd-l5-yWn" firstAttribute="top" secondItem="PSC-8w-0Cg" secondAttribute="top" constant="798" id="QGd-qe-LLp"/>
                             <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="QS4-OC-4QH"/>
                             <constraint firstAttribute="bottom" secondItem="89N-Ej-8MG" secondAttribute="bottom" constant="20" id="dZz-GG-nGO"/>
                             <constraint firstItem="1tC-Vf-X3c" firstAttribute="top" secondItem="Bvd-PZ-I4S" secondAttribute="top" id="eHX-bG-LoG"/>
                             <constraint firstItem="PSC-8w-0Cg" firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="iE7-qD-Lpn"/>
+                            <constraint firstItem="gMd-l5-yWn" firstAttribute="leading" secondItem="PSC-8w-0Cg" secondAttribute="leading" id="xfy-jW-T9S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PSC-8w-0Cg"/>
                     </view>
@@ -788,6 +921,9 @@ In addition to college-related material, the website features entertainment news
             <point key="canvasLocation" x="2876.811594202899" y="734.59821428571422"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="h0f-id-ywd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Alex Morgan" width="720" height="315"/>
         <image name="Ronaldo.jpg 16-16-00-4" width="341" height="512"/>
