@@ -271,6 +271,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="menTeam:" destination="AS8-9m-Klo" eventType="touchUpInside" id="o7h-bd-aSf"/>
+                                    <action selector="nextBtn:" destination="AS8-9m-Klo" eventType="touchUpInside" id="hOH-kS-EpM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2T-8G-3gn" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
@@ -308,6 +309,9 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ciRed:" destination="AS8-9m-Klo" eventType="touchUpInside" id="b0u-tk-pRr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-e2-mBP" customClass="BoarderButton" customModule="swoosh">
                                 <rect key="frame" x="10" y="730" width="394" height="72"/>
@@ -324,7 +328,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="nextBtn:" destination="AS8-9m-Klo" eventType="touchUpInside" id="kfU-53-fWe"/>
+                                    <action selector="nextBtn:" destination="AS8-9m-Klo" eventType="touchUpInside" id="6wC-Rb-gPy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -633,7 +637,7 @@ She shared the 2012 Olympic gold medal with teammate Abby Wambach.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eq-3Z-9kL" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eq-3Z-9kL" customClass="BoarderButton" customModule="swoosh">
                                 <rect key="frame" x="0.0" y="789" width="414" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="6Uz-xF-6iv"/>
@@ -922,7 +926,7 @@ In addition to college-related material, the website features entertainment news
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="h0f-id-ywd"/>
+        <segue reference="0aN-OV-nYw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Alex Morgan" width="720" height="315"/>
