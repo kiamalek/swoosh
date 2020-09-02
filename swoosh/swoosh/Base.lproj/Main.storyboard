@@ -472,7 +472,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="KTY-ec-0Th"/>
                     <connections>
-                        <outlet property="Ronaldo" destination="FQ2-Sj-hr4" id="YgR-g8-Zpu"/>
                         <segue destination="uZP-Vp-VwV" kind="show" id="J78-0g-Bkc"/>
                     </connections>
                 </viewController>

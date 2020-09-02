@@ -8,22 +8,14 @@
 
 import UIKit
 
-
+    var welcomMessage = ""
    class CoRedVC: UIViewController {
-
+    
+    
+        
         override func viewDidLoad() {
             super.viewDidLoad()
-            let b:Int = 1985
-            if (b - 621 <= 38) {
-                print("Ronaldo is younger than me")
-            }
-            else if (b - 621 == 38){
-                print("He's not younger than me")
-            } else if (b - 621 > 38){
-                print("It's older")
-            }   else {
-                print("it's impossible")
-                }
+            
                 }
             }
     

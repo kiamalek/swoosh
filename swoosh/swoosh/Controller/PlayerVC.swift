@@ -23,34 +23,69 @@ class PlayerVC: UIViewController {
         print("again")
         print("again")
     }
-    
-    @IBAction func ronaldoButtonTapped(_ sender: Any) {
-        nextbtn.isEnabled = true
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cristianRonaldoVC = segue.destination as? CristianRonaldoVC {
+            cristianRonaldoVC.welcomMessage = "I'm unique"
+        }
+        if let alexMorganVC = segue.destination as? CoRedVC {
+        alexMorganVC.welcomMesssage = "I'm unique"
+            }
+        if let coRedVC = segue.destination as? AlexMorganVC {
+            alexMorganVC.welcomMesssage = "I'm unique"
+    @IBAction func nextbtn(_ sender: Any) {
         if selectedChar == "men" {
-            print("You can open chiristian Ronaldo page")
+            //Ronaldo
+            //cristianRonaldo
+        }
+        else if selectedChar == "women" {
+            //Alex
+            //alexMorgan
+        }
+        else if selectedChar == "coRed"    {
+            //coRed
+            //coRed
+        }
+        if let alexMorganVC = segue.destination as? AlexMorganVC {
+            
+        }
+        if let coRedVC = segue.destination as? CoRedVC {
+            
+        }
         }
         
-        }
-    @IBAction func alexButtonTapped(_ sender: Any) {
-            nextbtn.isEnabled = true
-            if selectedChar == "woman" {
-                print("Open Alex Morgan page")
-        }
-    }
-     @IBAction func coRedButtonTapped(_ sender: Any) {
-        nextbtn.isEnabled = true
-        if selectedChar == "coRed" {
-            print("Both genders plays this sport")
-        }
-        
-        
-            }
+        @IBAction func ronaldoButtonTapped(_ sender: Any) {
+            if selectedChar == "men" {
+                print("You can open chiristian Ronaldo page")
+                nextbtn.isEnabled = true
+                performSegue(withIdentifier: "CristianRonaldoVC", sender: self)
                 
+            }
+            
+        }
+        @IBAction func alexButtonTapped(_ sender: Any) {
+            if selectedChar == "women" {
+                print("women do it")
+                nextbtn.isEnabled = true
+                performSegue(withIdentifier: "AlexMorganVC", sender: self)
                 
+            }
+        }
+        @IBAction func coRedButtonTapped(_ sender: Any) {
+            if selectedChar == "coRed" {
+                print("both gender plays it")
+                nextbtn.isEnabled = true
+                performSegue(withIdentifier: "CoRedVC", sender: self)
             }
             
             
-            
-            
-            
+        }
+        
+        
+}
 
+
+
+
+
+
+}
