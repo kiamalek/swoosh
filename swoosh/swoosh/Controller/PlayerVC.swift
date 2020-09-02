@@ -42,9 +42,7 @@ class PlayerVC: UIViewController {
         if selectedChar == "coRed" {
             print("Both genders plays this sport")
         }
-        else if selectedChar == "men" {
-            print("It's not only for men")
-        }
+        
         
             }
                 
