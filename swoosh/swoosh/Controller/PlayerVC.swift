@@ -29,28 +29,14 @@ class PlayerVC: UIViewController {
         if selectedChar == "men" {
             print("You can open chiristian Ronaldo page")
         }
-        else if  selectedChar == "Women" {
-            print("You chooswd wrong icon")
-        }
-        else if selectedChar == "coRed" {
-            print("You choosed wrong icon")
-        }
-    else if selectedChar == "men" {
-            selectedChar = "men"
-            nextbtn.isEnabled = true
-        }
+        
         }
     @IBAction func alexButtonTapped(_ sender: Any) {
             nextbtn.isEnabled = true
             if selectedChar == "woman" {
                 print("Open Alex Morgan page")
         }
-            else if selectedChar == "men" {
-                print("You choosed wrong icon")
-        }
-            else if selectedChar == "coRed" {
-                print("You choosed wrong icon")
-        }
+    }
      @IBAction func coRedButtonTapped(_ sender: Any) {
         nextbtn.isEnabled = true
         if selectedChar == "coRed" {
@@ -59,9 +45,7 @@ class PlayerVC: UIViewController {
         else if selectedChar == "men" {
             print("It's not only for men")
         }
-        else if selectedChar == "women" {
-            print("It's not just for women"
-            )
+        
             }
                 
                 
@@ -71,6 +55,4 @@ class PlayerVC: UIViewController {
             
             
             
-}
 
-}

@@ -759,7 +759,6 @@ She shared the 2012 Olympic gold medal with teammate Abby Wambach.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmd-Dz-ChE" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="-20" y="798" width="414" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="7uZ-O7-kTi"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="Rzr-32-xln"/>
                                 </constraints>
                                 <state key="normal" image="backButton">
@@ -784,7 +783,6 @@ One of the most marketable and famous athletes in the world, Ronaldo was ranked 
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKG-l6-oa2" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="798" width="414" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="a1Z-Dn-5nc"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="wYM-6i-4eo"/>
                                 </constraints>
                                 <state key="normal" image="backButton">
@@ -806,6 +804,7 @@ One of the most marketable and famous athletes in the world, Ronaldo was ranked 
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Kah-ll-uwv" firstAttribute="trailing" secondItem="UFv-Na-GzZ" secondAttribute="trailing" id="04A-HJ-xok"/>
+                            <constraint firstItem="lmd-Dz-ChE" firstAttribute="top" secondItem="lKG-l6-oa2" secondAttribute="top" id="0nB-R2-AOn"/>
                             <constraint firstItem="lKG-l6-oa2" firstAttribute="top" secondItem="UFv-Na-GzZ" secondAttribute="top" constant="798" id="1zB-wf-Two"/>
                             <constraint firstItem="lKG-l6-oa2" firstAttribute="leading" secondItem="ucQ-Jd-jij" secondAttribute="leading" id="7R2-5N-toF"/>
                             <constraint firstItem="lKG-l6-oa2" firstAttribute="leading" secondItem="Kah-ll-uwv" secondAttribute="leading" id="89s-Z9-pZ8"/>
@@ -819,12 +818,9 @@ One of the most marketable and famous athletes in the world, Ronaldo was ranked 
                             <constraint firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="Plw-st-0j2"/>
                             <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="RKX-KO-x5h"/>
                             <constraint firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="S7H-ev-oHf"/>
-                            <constraint firstItem="lKG-l6-oa2" firstAttribute="top" secondItem="lmd-Dz-ChE" secondAttribute="top" id="VIO-5U-zfD"/>
-                            <constraint firstAttribute="bottom" secondItem="lmd-Dz-ChE" secondAttribute="bottom" constant="20" id="Xai-eo-pWb"/>
                             <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="Xwv-V7-PsR"/>
                             <constraint firstItem="ucQ-Jd-jij" firstAttribute="top" secondItem="rtJ-Dg-2Gz" secondAttribute="topMargin" constant="-55" id="ekX-IZ-SCw"/>
                             <constraint firstItem="ucQ-Jd-jij" firstAttribute="bottom" secondItem="Kah-ll-uwv" secondAttribute="bottom" id="fmV-vG-8Sy"/>
-                            <constraint firstAttribute="bottom" secondItem="lKG-l6-oa2" secondAttribute="bottom" constant="5" id="n08-YL-D9z"/>
                             <constraint firstAttribute="bottom" secondItem="Kah-ll-uwv" secondAttribute="bottom" id="oRO-Sr-nX3"/>
                             <constraint firstItem="lmd-Dz-ChE" firstAttribute="leading" secondItem="rtJ-Dg-2Gz" secondAttribute="leading" constant="-20" id="rh3-Jq-N7a"/>
                             <constraint firstItem="UFv-Na-GzZ" firstAttribute="trailing" secondItem="lmd-Dz-ChE" secondAttribute="trailing" constant="20" id="sCV-dq-3Ej"/>
@@ -842,30 +838,28 @@ One of the most marketable and famous athletes in the world, Ronaldo was ranked 
         <scene sceneID="Fak-Bn-0lE">
             <objects>
                 <viewController id="qK5-qQ-O2G" customClass="CoRedInfo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Bvd-PZ-I4S">
+                    <view key="view" contentMode="scaleToFill" id="Bvd-PZ-I4S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1tC-Vf-X3c">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1tC-Vf-X3c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-Ej-8MG" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-Ej-8MG" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="-20" y="798" width="414" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="4V4-s0-JuZ"/>
-                                    <constraint firstAttribute="height" constant="24" id="W7I-RP-EwE"/>
                                 </constraints>
                                 <state key="normal" image="backButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IAY-rR-puc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IAY-rR-puc">
                                 <rect key="frame" x="0.0" y="77" width="414" height="819"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">COED is a news, entertainment, sports, and lifestyle website. Originally a print magazine, COED shifted towards online publication exclusively in 2007.[4][5] The content is primarily targeted at college-aged men and written by college-aged writers.[6] The website contains news and interviews as well as photography of female celebrities.[7] Posts from COED are featured in publications such as The Huffington Post and Maxim.[8][9][10]
 
@@ -877,7 +871,6 @@ In addition to college-related material, the website features entertainment news
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-l5-yWn" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="798" width="414" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="Z2G-Qr-cuZ"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="sSm-qV-Qvn"/>
                                 </constraints>
                                 <state key="normal" image="backButton">
@@ -898,7 +891,7 @@ In addition to college-related material, the website features entertainment news
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="gMd-l5-yWn" secondAttribute="bottom" constant="5" id="00z-cK-leU"/>
+                            <constraint firstItem="1tC-Vf-X3c" firstAttribute="leading" secondItem="IAY-rR-puc" secondAttribute="leading" id="56U-gs-1NJ"/>
                             <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="9YP-Oz-sIq"/>
                             <constraint firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="D5r-jA-ilo"/>
                             <constraint firstAttribute="bottom" secondItem="1tC-Vf-X3c" secondAttribute="bottom" id="ELu-I9-oNn"/>
@@ -909,9 +902,12 @@ In addition to college-related material, the website features entertainment news
                             <constraint firstItem="1tC-Vf-X3c" firstAttribute="trailing" secondItem="PSC-8w-0Cg" secondAttribute="trailing" id="LtL-sB-NiP"/>
                             <constraint firstAttribute="trailing" secondItem="gMd-l5-yWn" secondAttribute="trailing" id="MjE-jd-3be"/>
                             <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="NrM-XP-43Z"/>
+                            <constraint firstItem="89N-Ej-8MG" firstAttribute="top" secondItem="gMd-l5-yWn" secondAttribute="top" id="Oa2-qp-tfU"/>
                             <constraint firstItem="gMd-l5-yWn" firstAttribute="top" secondItem="PSC-8w-0Cg" secondAttribute="top" constant="798" id="QGd-qe-LLp"/>
                             <constraint firstItem="89N-Ej-8MG" firstAttribute="leading" secondItem="Bvd-PZ-I4S" secondAttribute="leading" constant="-20" id="QS4-OC-4QH"/>
-                            <constraint firstAttribute="bottom" secondItem="89N-Ej-8MG" secondAttribute="bottom" constant="20" id="dZz-GG-nGO"/>
+                            <constraint firstItem="1tC-Vf-X3c" firstAttribute="trailing" secondItem="IAY-rR-puc" secondAttribute="trailing" id="Vkh-oT-huu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="IAY-rR-puc" secondAttribute="bottom" constant="-88" id="b50-Oj-CCq"/>
+                            <constraint firstItem="IAY-rR-puc" firstAttribute="top" secondItem="PSC-8w-0Cg" secondAttribute="top" constant="77" id="bzQ-6L-bFD"/>
                             <constraint firstItem="1tC-Vf-X3c" firstAttribute="top" secondItem="Bvd-PZ-I4S" secondAttribute="top" id="eHX-bG-LoG"/>
                             <constraint firstItem="PSC-8w-0Cg" firstAttribute="trailing" secondItem="89N-Ej-8MG" secondAttribute="trailing" constant="20" id="iE7-qD-Lpn"/>
                             <constraint firstItem="gMd-l5-yWn" firstAttribute="leading" secondItem="PSC-8w-0Cg" secondAttribute="leading" id="xfy-jW-T9S"/>
