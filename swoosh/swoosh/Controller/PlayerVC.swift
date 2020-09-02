@@ -24,23 +24,23 @@ class PlayerVC: UIViewController {
         print("again")
     }
     
-    @IBAction func nextBtn(_ sender: Any) {
+    @IBAction func ronaldoButtonTapped(_ sender: Any) {
         nextbtn.isEnabled = true
         if selectedChar == "men" {
             print("You can open chiristian Ronaldo page")
         }
         else if  selectedChar == "Women" {
-            print("You prefer open Alex Morgab page")
+            print("You prefer open Alex Morgan page")
         }
         else if selectedChar == "coRed" {
-            print("It's coRed")
+            print("Both gender play this sport")
         }
     else if selectedChar == "men" {
             selectedChar = "men"
             nextbtn.isEnabled = true
         }
         }
-    @IBAction func nextBtn(_ sender: Any) {
+    @IBAction func alexButtonTapped(_ sender: Any) {
             nextbtn.isEnabled = true
             if selectedChar == "woman" {
                 print("Open Alex Morgan page")
@@ -51,10 +51,10 @@ class PlayerVC: UIViewController {
             else if selectedChar == "coRed" {
                 print("This is coRed")
         }
-        @IBAction func nextBtn(_ sender: Any) {
+        @IBAction func coRedButtonTapped(_ sender: Any) {
         nextbtn.isEnabled = true
         if selectedChar == "coRed" {
-            print("Both gender play this sport")
+            print("Both genders play this sport")
         }
         else if selectedChar == "men" {
             print("It's not only for men")
