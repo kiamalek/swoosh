@@ -30,10 +30,10 @@ class PlayerVC: UIViewController {
             print("You can open chiristian Ronaldo page")
         }
         else if  selectedChar == "Women" {
-            print("You prefer open Alex Morgan page")
+            print("You chooswd wrong icon")
         }
         else if selectedChar == "coRed" {
-            print("Both gender play this sport")
+            print("You choosed wrong icon")
         }
     else if selectedChar == "men" {
             selectedChar = "men"
@@ -46,15 +46,15 @@ class PlayerVC: UIViewController {
                 print("Open Alex Morgan page")
         }
             else if selectedChar == "men" {
-                print("You can open Cristian Ronaldo page")
+                print("You choosed wrong icon")
         }
             else if selectedChar == "coRed" {
-                print("This is coRed")
+                print("You choosed wrong icon")
         }
-        @IBAction func coRedButtonTapped(_ sender: Any) {
+     @IBAction func coRedButtonTapped(_ sender: Any) {
         nextbtn.isEnabled = true
         if selectedChar == "coRed" {
-            print("Both genders play this sport")
+            print("Both genders plays this sport")
         }
         else if selectedChar == "men" {
             print("It's not only for men")
