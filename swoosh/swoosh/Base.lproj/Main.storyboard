@@ -269,10 +269,6 @@
                                         <color key="value" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="menTeam:" destination="AS8-9m-Klo" eventType="touchUpInside" id="o7h-bd-aSf"/>
-                                    <action selector="nextBtn:" destination="AS8-9m-Klo" eventType="touchUpInside" id="hOH-kS-EpM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2T-8G-3gn" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="49" y="213" width="316" height="72"/>
@@ -291,9 +287,6 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="wommanTeam:" destination="AS8-9m-Klo" eventType="touchUpInside" id="DJj-mF-YNd"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UA-p3-EMZ" customClass="BoarderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="49" y="349" width="316" height="60"/>
@@ -309,9 +302,6 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="ciRed:" destination="AS8-9m-Klo" eventType="touchUpInside" id="b0u-tk-pRr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-e2-mBP" customClass="BoarderButton" customModule="swoosh">
                                 <rect key="frame" x="10" y="730" width="394" height="72"/>
@@ -327,9 +317,6 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="nextBtn:" destination="AS8-9m-Klo" eventType="touchUpInside" id="6wC-Rb-gPy"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -357,7 +344,7 @@
                     <connections>
                         <outlet property="kyli" destination="E2T-8G-3gn" id="HJc-Q7-NNU"/>
                         <outlet property="menTeam" destination="hQf-Os-200" id="QIh-gO-bXj"/>
-                        <outlet property="womanTeam" destination="E2T-8G-3gn" id="kg5-Hh-wFg"/>
+                        <outlet property="womanTeam" destination="hQf-Os-200" id="4G7-Qf-fB8"/>
                         <segue destination="4j2-SL-nDv" kind="show" identifier="cristianRonaldo" id="BzH-eC-CEj"/>
                         <segue destination="B2p-RB-5kl" kind="show" identifier="alexMorgan" id="QJH-Tg-nX5"/>
                         <segue destination="DpK-JQ-SWP" kind="show" identifier="coRed" id="laU-IY-7xy"/>

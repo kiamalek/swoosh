@@ -8,16 +8,17 @@
 
 import UIKit
 
+class : UIViewController {
     var welcomMessage = ""
-   class CoRedVC: UIViewController {
+
     
-    
+    var test1: Int!
+    var test2: String!
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-                }
-            }
-    
+    }
+}
+
 
 
